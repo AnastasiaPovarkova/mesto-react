@@ -1,12 +1,3 @@
-export const settings = {
-    formSelector: '.popup__content',
-    inputSelector: '.popup__field',
-    submitButtonSelector: '.popup__submit',
-    inactiveButtonClass: 'popup__submit_inactive',
-    inputErrorClass: 'popup__field_type_error',
-    errorClass: 'popup__field_error_active'
-}
-
 const popupElementEditProfile = document.querySelector('.popup_edit-profile');
 export const popupOpenButtonElement = document.querySelector('.profile__edit-button');
 export const popupAddButtonElement = document.querySelector('.profile__add-button');
