@@ -38,4 +38,4 @@
 
 ## GH Pages
 
-### https://anastasiapovarkova.github.io/mesto-react/
+### [Ссылка на GitHub Pages](https://anastasiapovarkova.github.io/mesto-react/)
