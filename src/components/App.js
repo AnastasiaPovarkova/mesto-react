@@ -11,13 +11,13 @@ function App() {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState({});
 
   function closeAllPopups () {
     setIsEditAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);
-    setSelectedCard(null);
+    setSelectedCard({});
   }
 
   return (
@@ -53,7 +53,7 @@ function App() {
         <span className="link-field-error popup__field-error"></span>
       </PopupWithForm>
       <PopupWithForm classs='delete-card' name='delete-confirmation' title='Вы уверены?' submitText='Да' onClose={closeAllPopups}/>
-      {selectedCard && <ImagePopup card={selectedCard} onClose={closeAllPopups}/>}
+      <ImagePopup card={selectedCard} onClose={closeAllPopups}/>
       <Footer />
     </div>
 
