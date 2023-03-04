@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import coursor from '../images/AvatarEditCoursor.svg';
 import '../index.css';
-import api from './api';
+import api from '../utils/api';
 import Card from './Card';
 
 function Main({onEditAvatar, onEditProfile, onAddPlace, handleCardClick}) {
