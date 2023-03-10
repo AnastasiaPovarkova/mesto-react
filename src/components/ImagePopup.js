@@ -5,9 +5,9 @@ function ImagePopup({card, onClose}) {
   return (
     <div className={`popup popup_open-card ${(Object.entries(card).length > 0) && 'popup_is-opened'}`}>
       <div className="popup__element">
-        <img className="popup__image" src={card.src} alt={card.alt}/>
+        <img className="popup__image" src={card.link} alt={card.name}/>
         <button type="button" aria-label="Закрыть" className="popup__close" onClick={onClose}></button>
-        <h2 className="popup__text">{card.cardName}</h2>
+        <h2 className="popup__text">{card.name}</h2>
       </div>
     </div>
   )
