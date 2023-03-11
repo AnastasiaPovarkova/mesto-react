@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-function PopupWithForm({name, title, onClose, isOpen, children, classs, submitText}) {
+function PopupWithForm({name, title, onClose, isOpen, children, classs, submitText, onSubmit}) {
   return (
   <div className={`popup popup_${classs} ${isOpen && 'popup_is-opened'}`}>
     <div className="popup__container">
@@ -11,7 +11,7 @@ function PopupWithForm({name, title, onClose, isOpen, children, classs, submitTe
         className="popup__close" 
         onClick={onClose}>
       </button>
-      <form name={`popup__${name}`} id={`popup__${name}`} className="popup__content" noValidate>
+      <form name={`popup__${name}`} id={`popup__${name}`} className="popup__content" noValidate onSubmit={onSubmit}>
         <h2 className="popup__title">{title}</h2>
         {children}
         <button 
