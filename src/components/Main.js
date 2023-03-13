@@ -57,26 +57,3 @@ function Main({cards, onEditAvatar, onEditProfile, onAddPlace, handleCardClick, 
 }
 
 export default Main;
-
-
-// const [userName, setUserName] = useState('');
-  // const [userDescription, setUserDescription] = useState('');
-  // const [userAvatar, setUserAvatar] = useState('');
-  // const [cards, setCards] = useState([]);
-
-  // useEffect(() => {
-  //   Promise.all([api.getUserInfo(), api.getInitialCards()])
-  //     .then(([data, cards]) => {
-  //       setUserName(data.name);
-  //       setUserDescription(data.about);
-  //       setUserAvatar(data.avatar);
-  //       setCards(cards.map((card) => ({
-  //         id: card._id,
-  //         src: card.link,
-  //         cardName: card.name,
-  //         alt: card.name,
-  //         likes: card.likes
-  //       })))
-  //     })
-  //     .catch(err => console.log(err));
-  // }, []);

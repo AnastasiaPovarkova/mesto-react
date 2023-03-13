@@ -1,10 +1,10 @@
 import React from 'react';
 import '../index.css';
 
-function PopupWithForm({name, title, onClose, isOpen, children, classs, submitText, onSubmit}) {
+function PopupWithForm({name, title, onClose, isOpen, children, classs, submitText, onSubmit, isLoading}) {
   return (
-  <div className={`popup popup_${classs} ${isOpen && 'popup_is-opened'}`}>
-    <div className="popup__container">
+  <div className={`popup popup_${classs} ${isOpen && 'popup_is-opened'}`} onClick={onClose}>
+    <div className="popup__container" onClick={(e) => {e.stopPropagation()}}>
       <button 
         type="button" 
         aria-label="Закрыть" 
@@ -18,7 +18,7 @@ function PopupWithForm({name, title, onClose, isOpen, children, classs, submitTe
           type="submit" 
           className="popup__submit" 
           name="submit" 
-          defaultValue={submitText || 'Сохранить'}>{submitText || 'Сохранить'}
+          defaultValue={submitText || 'Сохранить'}>{isLoading ? 'Сохранение...' : (submitText || 'Сохранить')}
         </button>
       </form>
     </div>
