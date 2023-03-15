@@ -3,13 +3,7 @@
   height: 120px;
   border-radius: 50%;
   transition: opacity 0.3s;
-  background-image: url(../../../images/AvatarEditCoursor.svg);
   cursor: pointer;
   position: absolute;
+  z-index: 0;
 }
-
-.profile__avatar:hover {
-  opacity: 0.2;
-}
-
-

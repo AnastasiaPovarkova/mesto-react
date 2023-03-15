@@ -12,3 +12,11 @@
     margin-bottom: 26px;
   }
 }
+
+.profile__image:hover .profile__avatar{
+  opacity: 0.2;
+}
+
+.profile__image:hover .profile__edit{
+  opacity: 1;
+}
