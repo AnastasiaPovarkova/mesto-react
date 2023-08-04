@@ -41,4 +41,4 @@ ____
 
 Затем эти файлы можно разместить на любом сервере, т.е. использовать для деплоя веб-приложения в интернете.
 
-## Ссылка на GitHub Pages: [Mesto-React](https://anastasiapovarkova.github.io/mesto-react/)
+## Ссылка на GitHub Pages:  [Mesto-React](https://anastasiapovarkova.github.io/mesto-react/)
