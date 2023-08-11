@@ -1,4 +1,5 @@
 # Mesto-React
+#### Статус: сделано :white_check_mark:
 
 <a href="https://anastasiapovarkova.github.io/mesto-react/" target="_blank">
     <img src="https://github.com/AnastasiaPovarkova/mesto-react/blob/main/src/images/screensaver.png?raw=true" width="900" title="Mesto-React" alt="Mesto-React"/>
